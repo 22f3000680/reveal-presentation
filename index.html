@@ -5,6 +5,7 @@
     <title>Reveal.js Presentation</title>
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
   </head>
   <body>
     <div class="reveal">
@@ -35,13 +36,23 @@
 
         <!-- Slide 4: Code -->
         <section>
-          <h2>Python Code</h2>
-          <pre><code data-trim class="python">
-def greet(name):
-    print(f"Hello, {name}!")
+        <h2>Python Code</h2>
+            <pre><code class="language-python" data-trim>
+            def greet(name):
+                print(f"Hello, {name}!")
 
-greet("World")
-          </code></pre>
+            greet("World")
+            </code></pre>
+        </section>
+        <section>
+        <h2>JavaScript Example</h2>
+        <pre><code class="language-javascript" data-trim>
+        function add(a, b) {
+        return a + b;
+        }
+
+        console.log(add(2, 3));
+        </code></pre>
         </section>
 
         <!-- Slide 5: Math -->
@@ -67,11 +78,12 @@ greet("World")
     <script src="plugin/highlight/highlight.js"></script>
     <script src="plugin/math/math.js"></script>
     <script src="plugin/notes/notes.js"></script>
-    <script>
-      Reveal.initialize({
-        hash: true,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-      });
-    </script>
+    <script src="plugin/highlight/highlight.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+  });
+</script>
   </body>
 </html>
