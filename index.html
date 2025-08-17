@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reveal.js Presentation</title>
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Title -->
+        <section>
+          <h1>Welcome!</h1>
+          <p id="22f3000680@ds.study.iitm.ac.in">Presented by 22f3000680@ds.study.iitm.ac.in</p>
+        </section>
+
+        <!-- Slide 2: Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+            ## Markdown Slide
+            This slide was written in **Markdown**!
+          </textarea>
+        </section>
+
+        <!-- Slide 3: Fragments -->
+        <section>
+          <h2>Animated Points</h2>
+          <ul>
+            <li class="fragment">Point 1</li>
+            <li class="fragment">Point 2</li>
+            <li class="fragment">Point 3</li>
+          </ul>
+        </section>
+
+        <!-- Slide 4: Code -->
+        <section>
+          <h2>Python Code</h2>
+          <pre><code data-trim class="python">
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("World")
+          </code></pre>
+        </section>
+
+        <!-- Slide 5: Math -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Compound Interest:</p>
+          <p>$$ A = P \left(1 + \frac{r}{n} \right)^{nt} $$</p>
+        </section>
+
+        <!-- Slide 6: Speaker Notes -->
+        <section>
+          <h2>Conclusion</h2>
+          <p>Thank you!</p>
+          <aside class="notes">
+            Remember to thank the audience and share the GitHub link!
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
